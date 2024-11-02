@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 apiData = [
     {"penguin": "emperor penguin",
-     
+     "habitat": "ice",
 
     }
 ]
