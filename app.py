@@ -3,11 +3,12 @@ import requests
 
 app = Flask(__name__)
 
-# apiData = [
-#     {
+apiData = [
+    {"penguin": "emperor penguin",
+     
 
-#     }
-# ]
+    }
+]
 
 @app.route("/<name>/<day>")
 def hello_world(name, day):
@@ -21,7 +22,7 @@ def number(num):
 
 @app.route("/penguins")
 def penguin():
-    return 
+    return apiData
     # penguin = requests.get("http://100.114.3.84:5000/11")
     # return "olivias api said: " + penguin.text
 
